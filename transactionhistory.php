@@ -50,10 +50,10 @@ $mysqli->close();
             <a class="nav-link " aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">AboutUs</a>
+            <a class="nav-link" href="About.html">AboutUs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contactUs</a>
+            <a class="nav-link" href="contact.html">contactUs</a>
           </li>
 
         </ul>
