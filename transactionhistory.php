@@ -29,7 +29,9 @@ $mysqli->close();
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="userStyle.css">
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-  <title>Customer List</title>
+  <title>eBanking</title>
+    <link href="image/logo_small.png" rel="icon">
+    <meta name="theme-color" content="rgb(41, 43, 44)">
 </head>
 
 <body>
@@ -61,10 +63,10 @@ $mysqli->close();
       </div>
     </div>
   </nav>
-  <section class="row">
+  <section class="row table-responsive">
     <h1>Past Transaction</h1>
     <!-- TABLE CONSTRUCTION-->
-    <table>
+    <table  class="table table-striped table-hover">
       <tr>
         <th>ID</th>
         <th>Sender</th>

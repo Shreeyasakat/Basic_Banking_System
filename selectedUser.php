@@ -99,7 +99,9 @@ $mysqli->close();
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="selectedUserStyle.css">
   <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-  <title>User Details</title>
+  <title>eBanking</title>
+    <link href="image/logo_small.png" rel="icon">
+    <meta name="theme-color" content="rgb(41, 43, 44)">
 </head>
 
 <body>
@@ -160,8 +162,8 @@ $mysqli->close();
                 $rows=mysqli_fetch_assoc($result);
             ?>
     <form method="post" name="tcredit" class="tabletext"><br>
-      <div>
-        <table class="table table-striped table-condensed table-bordered">
+      <div class=" table-responsive">
+        <table class="table table-striped table-hover">
           <tr>
             <th class="text-center">Id</th>
             <th class="text-center">Name</th>
@@ -186,7 +188,7 @@ $mysqli->close();
       </div>
       <br>
       <label>Transfer To:</label>
-      <select name="to" class="form-control" required>
+      <select name="to" class="form-control text-line" required>
         <option value="" disabled selected>Choose</option>
         <?php
                 $server  = "localhost:3360";
@@ -228,7 +230,7 @@ $mysqli->close();
       <br>
       <br>
       <label>Amount:</label>
-      <input type="number" class="form-control" name="amount" required>
+      <input type="number" class="form-control text-line" name="amount" required>
       <br><br>
       <div class="text-center">
         <button class="btn btn-dark" name="submit" type="submit">Make Payment</button>
